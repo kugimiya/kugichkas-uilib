@@ -1,7 +1,8 @@
 {
   "name": "ui-toolkit",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "http://kugimiya.github.io/react-styleguidist-demo",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
@@ -17,7 +18,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "predeploy": "npm run build; npm run styleguide:build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
     "react-styleguidist": "^10.6.2"
   }

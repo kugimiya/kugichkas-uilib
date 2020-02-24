@@ -5,6 +5,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <h1><a href='/styleguide'>Go to styleguide page</a></h1>
+
       <TextInput
         placeholder='Фамилия сотрудника'
         onChange={ val => console.log({ val }) }
