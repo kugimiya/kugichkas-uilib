@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-styleguidist-demo/static/css/main.bc9236f6.chunk.css",
-    "main.js": "/react-styleguidist-demo/static/js/main.44977cdd.chunk.js",
-    "main.js.map": "/react-styleguidist-demo/static/js/main.44977cdd.chunk.js.map",
+    "main.js": "/react-styleguidist-demo/static/js/main.c8827930.chunk.js",
+    "main.js.map": "/react-styleguidist-demo/static/js/main.c8827930.chunk.js.map",
     "runtime-main.js": "/react-styleguidist-demo/static/js/runtime-main.4640461c.js",
     "runtime-main.js.map": "/react-styleguidist-demo/static/js/runtime-main.4640461c.js.map",
     "static/js/2.ead9738c.chunk.js": "/react-styleguidist-demo/static/js/2.ead9738c.chunk.js",
     "static/js/2.ead9738c.chunk.js.map": "/react-styleguidist-demo/static/js/2.ead9738c.chunk.js.map",
     "index.html": "/react-styleguidist-demo/index.html",
-    "precache-manifest.1c162a91476faa2847235c6397229e66.js": "/react-styleguidist-demo/precache-manifest.1c162a91476faa2847235c6397229e66.js",
+    "precache-manifest.cc3f49097db86eaa5192b6c6e7701bfb.js": "/react-styleguidist-demo/precache-manifest.cc3f49097db86eaa5192b6c6e7701bfb.js",
     "service-worker.js": "/react-styleguidist-demo/service-worker.js",
     "static/css/main.bc9236f6.chunk.css.map": "/react-styleguidist-demo/static/css/main.bc9236f6.chunk.css.map",
     "static/js/2.ead9738c.chunk.js.LICENSE.txt": "/react-styleguidist-demo/static/js/2.ead9738c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4640461c.js",
     "static/js/2.ead9738c.chunk.js",
     "static/css/main.bc9236f6.chunk.css",
-    "static/js/main.44977cdd.chunk.js"
+    "static/js/main.c8827930.chunk.js"
   ]
 }

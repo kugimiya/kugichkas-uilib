@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21494de56c107ddd20ca1f6a06e5352d",
+    "revision": "6bbb1a415666283f0ed9131893ffd122",
     "url": "/react-styleguidist-demo/index.html"
   },
   {
-    "revision": "3569b0c0dba86d1d8434",
+    "revision": "705da6eb876b5c82cb55",
     "url": "/react-styleguidist-demo/static/css/main.bc9236f6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-styleguidist-demo/static/js/2.ead9738c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3569b0c0dba86d1d8434",
-    "url": "/react-styleguidist-demo/static/js/main.44977cdd.chunk.js"
+    "revision": "705da6eb876b5c82cb55",
+    "url": "/react-styleguidist-demo/static/js/main.c8827930.chunk.js"
   },
   {
     "revision": "36193d953032fdc06806",
