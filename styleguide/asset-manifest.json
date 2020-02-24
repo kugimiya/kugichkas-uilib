@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-styleguidist-demo/static/css/main.076d247c.chunk.css",
+    "main.js": "/react-styleguidist-demo/build/main.d4f75e3b.js",
+    "runtime-main.js": "/react-styleguidist-demo/build/bundle.47e562ce.js",
+    "build/2.0a9130f8.js": "/react-styleguidist-demo/build/2.0a9130f8.js",
+    "build/2.0a9130f8.js.LICENSE.txt": "/react-styleguidist-demo/build/2.0a9130f8.js.LICENSE.txt",
+    "index.html": "/react-styleguidist-demo/index.html",
+    "precache-manifest.7e5052daf9fbf14f21118b27371ce5be.js": "/react-styleguidist-demo/precache-manifest.7e5052daf9fbf14f21118b27371ce5be.js",
+    "service-worker.js": "/react-styleguidist-demo/service-worker.js",
+    "static/css/main.076d247c.chunk.css.map": "/react-styleguidist-demo/static/css/main.076d247c.chunk.css.map"
+  },
+  "entrypoints": [
+    "build/bundle.47e562ce.js",
+    "build/2.0a9130f8.js",
+    "static/css/main.076d247c.chunk.css",
+    "build/main.d4f75e3b.js"
+  ]
+}
