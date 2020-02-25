@@ -5,7 +5,20 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1><a href='styleguide/index.html'>Go to styleguide page</a></h1>
+      <a href='styleguide/index.html'>Go to styleguide page (extended documentation)</a>
+
+      <hr />
+
+      <h3>TextInput component examples</h3>
+
+      <TextInput
+        placeholder='Фамилия сотрудника'
+        value='Горюнов'
+        disabled
+        onChange={ val => console.log({ val }) }
+      />
+
+      <br/>
 
       <TextInput
         placeholder='Фамилия сотрудника'

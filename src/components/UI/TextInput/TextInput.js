@@ -8,6 +8,7 @@ import './TextInput.scss';
 export function TextInput({
   placeholder = 'Input placeholder',
   value = undefined,
+  disabled = false,
   error = false,
   errorTip = 'Something went wrong',
   onChange = () => { console.error('onChange callback missed!') },
@@ -23,15 +24,16 @@ export function TextInput({
 
   return (
     <div className='text-input' style={ customStylesContainer }>
-      <div className={ `text-input__inner${ error ? ' text-input__inner--error' : '' }` }>
+      <div className={ `text-input__inner${ error ? ' text-input__inner--error' : '' }${ disabled ? ' text-input__inner--disabled' : '' }` }>
         <input
-          className={ `text-input__tag${ error ? ' text-input__tag--error' : '' }` }
+          className={ `text-input__tag${ error ? ' text-input__tag--error' : '' }${ disabled ? ' text-input__tag--disabled' : '' }` }
           type='text'
           placeholder=' '
           defaultValue={ value }
           onInput={ event => onChange(event.target.value) }
+          disabled={ disabled }
         />
-        <span className={ `text-input__placeholder${ error ? ' text-input__placeholder--error' : '' }` }>{ placeholder }</span>
+        <span className={ `text-input__placeholder${ error ? ' text-input__placeholder--error' : '' }${ disabled ? ' text-input__placeholder--disabled' : '' }` }>{ placeholder }</span>
       </div>
       { errorTipContainer }
     </div>
@@ -47,6 +49,10 @@ TextInput.propTypes = {
    * Value; will be used in input-tag as defaultValue
    */
   value: PropTypes.string,
+  /**
+   * If passed in props, input will be marked as disabled
+   */
+  disabled: PropTypes.bool,
   /**
    * If passed in props, input will be marked as errored
    */
