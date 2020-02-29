@@ -1,14 +1,19 @@
 import React from 'react';
-import { TextInput } from './components/UI/TextInput/TextInput';
+import Checkbox from './Checkbox';
+import TextInput from './TextInput';
 import './App.css';
 
-function App() {
+function ExampleContainer({ children }) {
   return (
-    <div className="App">
-      <a href='styleguide/index.html'>Go to styleguide page (extended documentation)</a>
+    <div className='example-container'>
+      { children }
+    </div>
+  );
+}
 
-      <hr />
-
+function TextInputExample() {
+  return (
+    <ExampleContainer>
       <h3>TextInput component examples</h3>
 
       <TextInput
@@ -65,8 +70,59 @@ function App() {
         customStylesContainer={ { maxWidth: '420px' } }
         onChange={ val => console.log({ val }) }
       />
+    </ExampleContainer>
+  )
+}
+
+function CheckboxExample() {
+  return (
+    <ExampleContainer>
+      <h3>Checkbox component examples</h3>
+
+      <Checkbox>Учитывать все цены</Checkbox>
 
       <br />
+
+      <Checkbox active>Учитывать <b>все цены</b></Checkbox>
+
+      <br />
+
+      <Checkbox disabled>Учитывать все цены</Checkbox>
+
+      <br />
+
+      <Checkbox active disabled>Учитывать <b>все цены</b></Checkbox>
+
+      <br />
+
+      <Checkbox
+        error
+        errorTip='Вы должны быть согласны :^)'
+      >Я согласен с правилами сервиса</Checkbox>
+
+      <br />
+
+      <Checkbox
+        error
+        errorTip={
+          <b>Это обязательное поле!</b>
+        }
+      >Я согласен с правилами сервиса</Checkbox>
+    </ExampleContainer>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+      <a href='styleguide/index.html'>Go to styleguide page (extended documentation)</a>
+
+      <hr />
+
+      <div className='examples'>
+        <TextInputExample />
+        <CheckboxExample />
+      </div>
     </div>
   );
 }

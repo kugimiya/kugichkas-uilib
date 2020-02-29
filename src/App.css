@@ -8,3 +8,12 @@ body {
 
   font-family: 'Ubuntu', 'Arial';
 }
+
+.example-container {
+  width: 100%;
+  max-width: 480px;
+}
+
+.examples {
+  display: flex;
+}

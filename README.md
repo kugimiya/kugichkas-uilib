@@ -1,4 +1,4 @@
 ## Links!
-App: [Link](https://kugimiya.github.io/react-styleguidist-demo)
+App: [Link](https://kugimiya.github.io/kugichkas-uilib)
 
-Styleguide: [Link](https://kugimiya.github.io/react-styleguidist-demo/styleguide/index.html)
+Styleguide: [Link](https://kugimiya.github.io/kugichkas-uilib/styleguide/index.html)

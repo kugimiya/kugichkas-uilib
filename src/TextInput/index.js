@@ -1,11 +1,12 @@
 import React from 'react';
+import classname from 'classname';
 import PropTypes from 'prop-types';
 import './TextInput.scss';
 
 /**
  * Simple text input component with flow-placeholder and mobile-ready
  */
-export function TextInput({
+export default function Index({
   placeholder = 'Input placeholder',
   value = undefined,
   disabled = false,
@@ -24,27 +25,43 @@ export function TextInput({
 
   return (
     <div className='text-input' style={ customStylesContainer }>
-      <div className={ `text-input__inner${ error ? ' text-input__inner--error' : '' }${ disabled ? ' text-input__inner--disabled' : '' }` }>
+      <div
+        className={ classname({
+          'text-input__inner': true,
+          'text-input__inner--disabled': disabled,
+          'text-input__inner--error': error
+        }) }
+      >
         <input
-          className={ `text-input__tag${ error ? ' text-input__tag--error' : '' }${ disabled ? ' text-input__tag--disabled' : '' }` }
+          className={ classname({
+            'text-input__tag': true,
+            'text-input__tag--disabled': disabled,
+            'text-input__tag--error': error
+          }) }
           type='text'
           placeholder=' '
           defaultValue={ value }
           onInput={ event => onChange(event.target.value) }
           disabled={ disabled }
         />
-        <span className={ `text-input__placeholder${ error ? ' text-input__placeholder--error' : '' }${ disabled ? ' text-input__placeholder--disabled' : '' }` }>{ placeholder }</span>
+        <span
+          className={ classname({
+            'text-input__placeholder': true,
+            'text-input__placeholder--disabled': disabled,
+            'text-input__placeholder--error': error
+          }) }
+        >{ placeholder }</span>
       </div>
       { errorTipContainer }
     </div>
   );
 }
 
-TextInput.propTypes = {
+Index.propTypes = {
   /**
    * Placeholder; not input-tag attribute!
    */
-  placeholder: PropTypes.string,
+  placeholder: PropTypes.node,
   /**
    * Value; will be used in input-tag as defaultValue
    */
@@ -60,7 +77,7 @@ TextInput.propTypes = {
   /**
    * Error text, can be string or another component
    */
-  errorTip: PropTypes.oneOfType([ PropTypes.string, PropTypes.object ]),
+  errorTip: PropTypes.node,
   /**
    * Callback, will be used as onInput at input-tag
    */

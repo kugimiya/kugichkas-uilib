@@ -1,12 +1,17 @@
 {
-  "name": "ui-toolkit",
-  "version": "0.1.0",
+  "name": "kugichkas-uilib",
+  "version": "0.1.1",
   "private": false,
-  "homepage": "http://kugimiya.github.io/react-styleguidist-demo",
+  "author": {
+    "email": "kugi@kugi.club",
+    "name": "Andrew Goncharov"
+  },
+  "homepage": "http://kugimiya.github.io/kugichkas-uilib",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
+    "classname": "0.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
