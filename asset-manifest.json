@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-styleguidist-demo/static/css/main.de637151.chunk.css",
-    "main.js": "/react-styleguidist-demo/static/js/main.cf03819e.chunk.js",
-    "main.js.map": "/react-styleguidist-demo/static/js/main.cf03819e.chunk.js.map",
-    "runtime-main.js": "/react-styleguidist-demo/static/js/runtime-main.4640461c.js",
-    "runtime-main.js.map": "/react-styleguidist-demo/static/js/runtime-main.4640461c.js.map",
-    "static/js/2.03ef84a6.chunk.js": "/react-styleguidist-demo/static/js/2.03ef84a6.chunk.js",
-    "static/js/2.03ef84a6.chunk.js.map": "/react-styleguidist-demo/static/js/2.03ef84a6.chunk.js.map",
-    "index.html": "/react-styleguidist-demo/index.html",
-    "precache-manifest.a503f10cf55497f430a981741e7e5c4d.js": "/react-styleguidist-demo/precache-manifest.a503f10cf55497f430a981741e7e5c4d.js",
-    "service-worker.js": "/react-styleguidist-demo/service-worker.js",
-    "static/css/main.de637151.chunk.css.map": "/react-styleguidist-demo/static/css/main.de637151.chunk.css.map",
-    "static/js/2.03ef84a6.chunk.js.LICENSE.txt": "/react-styleguidist-demo/static/js/2.03ef84a6.chunk.js.LICENSE.txt"
+    "main.css": "/kugichkas-uilib/static/css/main.de637151.chunk.css",
+    "main.js": "/kugichkas-uilib/static/js/main.71142fac.chunk.js",
+    "main.js.map": "/kugichkas-uilib/static/js/main.71142fac.chunk.js.map",
+    "runtime-main.js": "/kugichkas-uilib/static/js/runtime-main.d6223220.js",
+    "runtime-main.js.map": "/kugichkas-uilib/static/js/runtime-main.d6223220.js.map",
+    "static/js/2.19246d7a.chunk.js": "/kugichkas-uilib/static/js/2.19246d7a.chunk.js",
+    "static/js/2.19246d7a.chunk.js.map": "/kugichkas-uilib/static/js/2.19246d7a.chunk.js.map",
+    "index.html": "/kugichkas-uilib/index.html",
+    "precache-manifest.a2ec14742b9e0e9b9dc5cff71c0a3b18.js": "/kugichkas-uilib/precache-manifest.a2ec14742b9e0e9b9dc5cff71c0a3b18.js",
+    "service-worker.js": "/kugichkas-uilib/service-worker.js",
+    "static/css/main.de637151.chunk.css.map": "/kugichkas-uilib/static/css/main.de637151.chunk.css.map",
+    "static/js/2.19246d7a.chunk.js.LICENSE.txt": "/kugichkas-uilib/static/js/2.19246d7a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4640461c.js",
-    "static/js/2.03ef84a6.chunk.js",
+    "static/js/runtime-main.d6223220.js",
+    "static/js/2.19246d7a.chunk.js",
     "static/css/main.de637151.chunk.css",
-    "static/js/main.cf03819e.chunk.js"
+    "static/js/main.71142fac.chunk.js"
   ]
 }

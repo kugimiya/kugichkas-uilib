@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-styleguidist-demo/static/css/main.8dc7a320.chunk.css",
-    "main.js": "/react-styleguidist-demo/build/main.d70a8539.js",
-    "runtime-main.js": "/react-styleguidist-demo/build/bundle.47e562ce.js",
-    "build/2.26dc9615.js": "/react-styleguidist-demo/build/2.26dc9615.js",
-    "build/2.26dc9615.js.LICENSE.txt": "/react-styleguidist-demo/build/2.26dc9615.js.LICENSE.txt",
-    "index.html": "/react-styleguidist-demo/index.html",
-    "precache-manifest.bf74e6a558a07a72084a1ea4093b5708.js": "/react-styleguidist-demo/precache-manifest.bf74e6a558a07a72084a1ea4093b5708.js",
-    "service-worker.js": "/react-styleguidist-demo/service-worker.js",
-    "static/css/main.8dc7a320.chunk.css.map": "/react-styleguidist-demo/static/css/main.8dc7a320.chunk.css.map"
+    "main.css": "/kugichkas-uilib/static/css/main.8dc7a320.chunk.css",
+    "main.js": "/kugichkas-uilib/build/main.f466990b.js",
+    "runtime-main.js": "/kugichkas-uilib/build/bundle.47e562ce.js",
+    "build/2.a0bfa534.js": "/kugichkas-uilib/build/2.a0bfa534.js",
+    "build/2.a0bfa534.js.LICENSE.txt": "/kugichkas-uilib/build/2.a0bfa534.js.LICENSE.txt",
+    "index.html": "/kugichkas-uilib/index.html",
+    "precache-manifest.f71c964f40e5a6899990fbdd85b82856.js": "/kugichkas-uilib/precache-manifest.f71c964f40e5a6899990fbdd85b82856.js",
+    "service-worker.js": "/kugichkas-uilib/service-worker.js",
+    "static/css/main.8dc7a320.chunk.css.map": "/kugichkas-uilib/static/css/main.8dc7a320.chunk.css.map"
   },
   "entrypoints": [
     "build/bundle.47e562ce.js",
-    "build/2.26dc9615.js",
+    "build/2.a0bfa534.js",
     "static/css/main.8dc7a320.chunk.css",
-    "build/main.d70a8539.js"
+    "build/main.f466990b.js"
   ]
 }
