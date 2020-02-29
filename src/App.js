@@ -1,6 +1,6 @@
 import React from 'react';
-import Checkbox from './Checkbox';
-import TextInput from './TextInput';
+import Checkbox from './../Checkbox';
+import TextInput from './../TextInput';
 import './App.css';
 
 function ExampleContainer({ children }) {

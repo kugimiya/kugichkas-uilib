@@ -1,11 +1,12 @@
 {
   "name": "kugichkas-uilib",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "private": false,
   "author": {
     "email": "kugi@kugi.club",
     "name": "Andrew Goncharov"
   },
+  "main": "index.js",
   "homepage": "http://kugimiya.github.io/kugichkas-uilib",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
