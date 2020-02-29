@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-styleguidist-demo/static/css/main.d0d88eb4.chunk.css",
-    "main.js": "/react-styleguidist-demo/build/main.314e7f3d.js",
+    "main.css": "/react-styleguidist-demo/static/css/main.8dc7a320.chunk.css",
+    "main.js": "/react-styleguidist-demo/build/main.d70a8539.js",
     "runtime-main.js": "/react-styleguidist-demo/build/bundle.47e562ce.js",
-    "build/2.0a9130f8.js": "/react-styleguidist-demo/build/2.0a9130f8.js",
-    "build/2.0a9130f8.js.LICENSE.txt": "/react-styleguidist-demo/build/2.0a9130f8.js.LICENSE.txt",
+    "build/2.26dc9615.js": "/react-styleguidist-demo/build/2.26dc9615.js",
+    "build/2.26dc9615.js.LICENSE.txt": "/react-styleguidist-demo/build/2.26dc9615.js.LICENSE.txt",
     "index.html": "/react-styleguidist-demo/index.html",
-    "precache-manifest.9f51eeebc20c139afbbadf4a4071fa27.js": "/react-styleguidist-demo/precache-manifest.9f51eeebc20c139afbbadf4a4071fa27.js",
+    "precache-manifest.bf74e6a558a07a72084a1ea4093b5708.js": "/react-styleguidist-demo/precache-manifest.bf74e6a558a07a72084a1ea4093b5708.js",
     "service-worker.js": "/react-styleguidist-demo/service-worker.js",
-    "static/css/main.d0d88eb4.chunk.css.map": "/react-styleguidist-demo/static/css/main.d0d88eb4.chunk.css.map"
+    "static/css/main.8dc7a320.chunk.css.map": "/react-styleguidist-demo/static/css/main.8dc7a320.chunk.css.map"
   },
   "entrypoints": [
     "build/bundle.47e562ce.js",
-    "build/2.0a9130f8.js",
-    "static/css/main.d0d88eb4.chunk.css",
-    "build/main.314e7f3d.js"
+    "build/2.26dc9615.js",
+    "static/css/main.8dc7a320.chunk.css",
+    "build/main.d70a8539.js"
   ]
 }
