@@ -6,13 +6,13 @@ import './Checkbox.scss';
 /**
  * Simple checkbox component
  */
-export default function Checkbox({
+export function Checkbox({
   active = false,
   disabled = false,
   error = false,
-  errorTip = 'Что-то пошло не так',
+  errorTip = 'Something went wrong',
   customStylesContainer = {},
-  children = 'Index text',
+  children = 'Checkbox text',
   onChange = () => { console.error('onChange callback missed!') },
 }) {
   const errorTipContainer = error

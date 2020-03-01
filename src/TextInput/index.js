@@ -6,18 +6,19 @@ import './TextInput.scss';
 /**
  * Simple text input component with flow-placeholder and mobile-ready
  */
-export default function Index({
+export function TextInput({
   placeholder = 'Input placeholder',
   value = undefined,
   disabled = false,
   error = false,
   errorTip = 'Something went wrong',
-  onChange = () => { console.error('onChange callback missed!') },
-  customStylesContainer = {}
+  onChange = () => console.error('onChange callback missed!'),
+  customStylesContainer = {},
+  tagType = 'text'
 }) {
   const errorTipContainer = error
     ? (
-      <div className={ `text-input__error-container` }>
+      <div className='text-input__error-container'>
         { errorTip }
       </div>
     )
@@ -38,7 +39,7 @@ export default function Index({
             'text-input__tag--disabled': disabled,
             'text-input__tag--error': error
           }) }
-          type='text'
+          type={ tagType }
           placeholder=' '
           defaultValue={ value }
           onInput={ event => onChange(event.target.value) }
@@ -57,7 +58,7 @@ export default function Index({
   );
 }
 
-Index.propTypes = {
+TextInput.propTypes = {
   /**
    * Placeholder; not input-tag attribute!
    */
@@ -86,4 +87,8 @@ Index.propTypes = {
    * custom styles for main container, example: `{ maxWidth: 'unset' }`
    */
   customStylesContainer: PropTypes.object,
+  /**
+   * use for extend input-tag type
+   */
+  tagType: PropTypes.string
 };

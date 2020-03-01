@@ -1,0 +1,30 @@
+.light-block {
+  max-height: 220px;
+  overflow-y: auto;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.17);
+  border-radius: 6px;
+  padding: 10px;
+
+  @media (max-width: 480px) {
+    padding: 4px;
+    border-radius: 3px;
+  }
+
+  &__title {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.05em;
+    margin-bottom: 9px;
+
+    color: rgba(0, 0, 0, 0.45);
+
+    display: block;
+  }
+
+  & > &__title {
+    background: inherit;
+    position: sticky;
+    top: 0;
+  }
+}

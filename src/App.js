@@ -1,6 +1,8 @@
 import React from 'react';
-import Checkbox from './../Checkbox';
-import TextInput from './../TextInput';
+import { Checkbox } from './Checkbox';
+import { TextInput } from './TextInput';
+import { Selector } from './Selector';
+import { Block } from './Block';
 import './App.css';
 
 function ExampleContainer({ children }) {
@@ -112,6 +114,69 @@ function CheckboxExample() {
   );
 }
 
+function SelectorExample () {
+  return (
+    <ExampleContainer>
+      <h3>Selector component example</h3>
+
+      <Selector
+        CheckboxComponent={ Checkbox }
+        BlockComponent={ Block }
+        placeholder='Главный менеджер клиента'
+        items={ [
+          { id: 1, text: 'Менеджер 1' },
+          { id: 2, text: 'Менеджер 2' },
+          { id: 3, text: 'Менеджер 3' },
+        ] }
+        value={ [2, 3] }
+      />
+
+      <br />
+
+      <Selector
+        CheckboxComponent={ Checkbox }
+        BlockComponent={ Block }
+        placeholder='Главный менеджер клиента'
+        items={ [
+          { id: 1, text: 'Менеджер 1' },
+          { id: 2, text: 'Менеджер 2' },
+          { id: 3, text: 'Менеджер 3' },
+        ] }
+        value={ [] }
+        error
+        errorTip='Нужно указать менеджера'
+      />
+
+      <br />
+
+      <Selector
+        CheckboxComponent={ Checkbox }
+        BlockComponent={ Block }
+        placeholder='Главный менеджер клиента'
+        items={ [
+          { id: 1, text: 'Менеджер 1' },
+          { id: 2, text: 'Менеджер 2' },
+          { id: 3, text: 'Менеджер 3' },
+        ] }
+        value={ [2, 3] }
+        disabled
+      />
+
+      <br />
+
+      <Selector
+        CheckboxComponent={ Checkbox }
+        BlockComponent={ Block }
+        FetchingComponent={ () => (<div>Загрузка...</div>) }
+        placeholder='Главный менеджер клиента'
+        items={ [] }
+        value={ [] }
+        fetching
+      />
+    </ExampleContainer>
+  )
+}
+
 function App() {
   return (
     <div className="App">
@@ -122,6 +187,7 @@ function App() {
       <div className='examples'>
         <TextInputExample />
         <CheckboxExample />
+        <SelectorExample />
       </div>
     </div>
   );
