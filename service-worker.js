@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kugichkas-uilib/precache-manifest.a2ec14742b9e0e9b9dc5cff71c0a3b18.js"
+  "/kugichkas-uilib/precache-manifest.4333bd2400b05ae7635062c101cf0fd0.js"
 );
 
 self.addEventListener('message', (event) => {
