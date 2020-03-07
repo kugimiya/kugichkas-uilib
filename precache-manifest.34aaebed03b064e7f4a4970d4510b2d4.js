@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2798aa163505e9f72751d7cfd0245bb9",
+    "revision": "f867ce202b6b70f08fa3b3db18d9f584",
     "url": "/kugichkas-uilib/index.html"
   },
   {
-    "revision": "d7965b979622d918b396",
+    "revision": "f9bd0e574846f1a2a3a2",
     "url": "/kugichkas-uilib/static/css/main.05371fad.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kugichkas-uilib/static/js/2.098d7d7d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d7965b979622d918b396",
-    "url": "/kugichkas-uilib/static/js/main.355c29d6.chunk.js"
+    "revision": "f9bd0e574846f1a2a3a2",
+    "url": "/kugichkas-uilib/static/js/main.4c1e1404.chunk.js"
   },
   {
     "revision": "63f1e56d058435d82841",
