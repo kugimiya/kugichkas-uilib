@@ -127,8 +127,16 @@ function SelectorExample () {
           { id: 1, text: 'Менеджер 1' },
           { id: 2, text: 'Менеджер 2' },
           { id: 3, text: 'Менеджер 3' },
+          { id: 4, text: 'Менеджер 4' },
+          { id: 5, text: 'Менеджер 5' },
+          { id: 6, text: 'Менеджер 6' },
+          { id: 7, text: 'Менеджер 7' },
+          { id: 8, text: 'Менеджер 8' },
+          { id: 9, text: 'Менеджер 9' },
         ] }
         value={ [2, 3] }
+        onChange={ console.log }
+        multiple
       />
 
       <br />
@@ -167,7 +175,7 @@ function SelectorExample () {
       <Selector
         CheckboxComponent={ Checkbox }
         BlockComponent={ Block }
-        FetchingComponent={ () => (<div>Загрузка...</div>) }
+        FetchingComponent={ () => (<div style={ { padding: '10px' } }>Загрузка...</div>) }
         placeholder='Главный менеджер клиента'
         items={ [] }
         value={ [] }

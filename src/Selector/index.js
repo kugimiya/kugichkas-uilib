@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classname from 'classname';
 import './Selector.scss';
@@ -6,6 +6,7 @@ import './Selector.scss';
 export function Selector({
   error = false,
   errorTip = 'Something went wrong',
+  notSelectedTip = 'Not selected',
   disabled = false,
   fetching = false,
   multiple = false,
@@ -14,17 +15,9 @@ export function Selector({
   value = [],
   customStylesContainer = {},
   onChange = value => console.error('onChange callback missed, btw value is', value),
-  CheckboxComponent,
-  BlockComponent,
   FetchingComponent
 }) {
-  if (CheckboxComponent === undefined || CheckboxComponent === null) {
-    throw new Error('`CheckboxComponent` should be passed!');
-  }
-
-  if (BlockComponent === undefined || BlockComponent === null) {
-    throw new Error('`BlockComponent` should be passed!');
-  }
+  const [dropdownVisible, dropdownChangeVisibility] = useState(false);
 
   if (fetching) {
     if (FetchingComponent === undefined || FetchingComponent === null) {
@@ -49,39 +42,47 @@ export function Selector({
   };
 
   return (
-    <div
-      className={ classname({
-        selector: true,
-        'selector--error': error,
-        'selector--disabled': disabled,
-        'selector--fetching': fetching,
-      }) }
-      style={ customStylesContainer }
-    >
-      <BlockComponent
+    <div className='selector' style={ customStylesContainer }>
+      <div
         className={ classname({
-          selector__block: true,
-          'selector__block--error': error,
-          'selector__block--disabled': disabled,
-          'selector__block--fetching': fetching,
+          'selector__inner': true,
+          'selector__inner--error': error,
+          'selector__inner--disabled': disabled,
+          'selector__inner--dropdown-visible': dropdownVisible
         }) }
-        title={ placeholder }
+        onClick={ () => !disabled && dropdownChangeVisibility(!dropdownVisible) }
       >
-        { fetching
-          ? <FetchingComponent />
-          : items.map((item, index) => (
-            <CheckboxComponent
-              key={ item.id }
-              active={ value.includes(item.id) }
-              onChange={ value => _handleOnChange(item.id, value) }
-              disabled={ disabled }
-              customStylesContainer={ { marginBottom: items.length - 1 === index ? '' : '10px' } }
-            >
-              { item.text || item.name || item.title }
-            </CheckboxComponent>
-          ))
+        <div
+          className={ classname({ 'selector__placeholder': true, 'selector__placeholder--error': error }) }
+        >{ placeholder }</div>
+
+        <div
+          className={ classname({ 'selector__value': true, 'selector__value--exist': value.length > 0 }) }
+        >
+          { value.length > 0 ? items.filter(i => value.includes(i.id)).map(i => i.text).join(', ') : notSelectedTip }
+        </div>
+      </div>
+
+      <div
+        className={ classname({ 'selector__dropdown': true, 'selector__dropdown--visible': dropdownVisible }) }
+      >
+        {
+          items.length
+            ? items.map(item => (
+              <div
+                key={ item.id }
+                className={ classname({ 'selector__dropdown-item': true, 'selector__dropdown-item--active': value.includes(item.id) }) }
+                onClick={ () => _handleOnChange(item.id, !value.includes(item.id)) }
+              >
+                { item.text }
+              </div>
+            ))
+            : fetching
+              ? <FetchingComponent />
+              : <span>Нет данных</span>
         }
-      </BlockComponent>
+      </div>
+
       { errorTipContainer }
     </div>
   );
@@ -96,7 +97,6 @@ Selector.propTypes = {
   placeholder: PropTypes.node,
   items: PropTypes.array,
   value: PropTypes.array,
-  CheckboxComponent: PropTypes.node.isRequired,
-  BlockComponent: PropTypes.node.isRequired,
-  FetchingComponent: PropTypes.node
+  FetchingComponent: PropTypes.func,
+  notSelectedTip: PropTypes.node
 };
