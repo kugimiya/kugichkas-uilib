@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/kugichkas-uilib/static/css/main.8dc7a320.chunk.css",
-    "main.js": "/kugichkas-uilib/build/main.3669e651.js",
+    "main.css": "/kugichkas-uilib/static/css/main.9bba31f7.chunk.css",
+    "main.js": "/kugichkas-uilib/build/main.ecfa1f78.js",
     "runtime-main.js": "/kugichkas-uilib/build/bundle.47e562ce.js",
     "build/2.a0bfa534.js": "/kugichkas-uilib/build/2.a0bfa534.js",
     "build/2.a0bfa534.js.LICENSE.txt": "/kugichkas-uilib/build/2.a0bfa534.js.LICENSE.txt",
     "index.html": "/kugichkas-uilib/index.html",
-    "precache-manifest.fe71bf5c506d7bb0411c5c29fdfbf6eb.js": "/kugichkas-uilib/precache-manifest.fe71bf5c506d7bb0411c5c29fdfbf6eb.js",
+    "precache-manifest.296d00a9b3352d1562ae2456a09a4fd6.js": "/kugichkas-uilib/precache-manifest.296d00a9b3352d1562ae2456a09a4fd6.js",
     "service-worker.js": "/kugichkas-uilib/service-worker.js",
-    "static/css/main.8dc7a320.chunk.css.map": "/kugichkas-uilib/static/css/main.8dc7a320.chunk.css.map"
+    "static/css/main.9bba31f7.chunk.css.map": "/kugichkas-uilib/static/css/main.9bba31f7.chunk.css.map"
   },
   "entrypoints": [
     "build/bundle.47e562ce.js",
     "build/2.a0bfa534.js",
-    "static/css/main.8dc7a320.chunk.css",
-    "build/main.3669e651.js"
+    "static/css/main.9bba31f7.chunk.css",
+    "build/main.ecfa1f78.js"
   ]
 }
